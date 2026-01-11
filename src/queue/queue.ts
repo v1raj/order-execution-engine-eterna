@@ -5,8 +5,7 @@ export const ORDER_QUEUE_NAME = 'order-execution'
 
 export const orderQueue = new Queue<ExecuteOrderJob>(ORDER_QUEUE_NAME, {
   connection: {
-    host: process.env.REDIS_IP,
-    port: Number(process.env.REDIS_PORT) || 6379 ,
+    url:process.env.REDIS_URL
   },
   defaultJobOptions: {
     attempts: 3,
