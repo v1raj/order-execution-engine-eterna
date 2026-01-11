@@ -24,14 +24,8 @@ export interface Order {
 
 export interface DexQuote {
   dex: 'raydium' | 'meteora'
-
-  /** Effective execution price (amountOut / amountIn) */
   price: number
-
-  /** Fees charged by the DEX for this trade */
   fees: number
-
-  /** Liquidity context used to assess slippage & reliability */
 
 }
 
