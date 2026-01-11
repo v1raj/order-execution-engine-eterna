@@ -1,0 +1,30 @@
+{
+  "name": "order-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "test": "jest",
+    "worker": "ts-node-dev --respawn src/queue/worker.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/websocket": "^11.2.0",
+    "bullmq": "^5.66.4",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "ioredis": "^5.9.1",
+    "typescript": "^5.9.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/ws": "^8.18.1",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "ts-node-dev": "^2.0.0"
+  }
+}
